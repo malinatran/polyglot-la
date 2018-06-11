@@ -1,0 +1,323 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body {
+  font-family: $primary-font;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: white;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0 0 35px;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+  @media(min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#main-nav {
+  font-weight: 700;
+  margin-bottom: 0;
+  border-bottom: 1px solid fade-out(white, .7);
+  background-color: black;
+  .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    color: white;
+    border: 1px solid white;
+  }
+  .navbar-brand {
+    font-weight: 700;
+  }
+  a {
+    color: white;
+  }
+  .navbar-nav {
+    .nav-item {
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out;
+      &:hover {
+        color: fade(white, 80%);
+        outline: none;
+        background-color: transparent;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  @media(min-width:768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+    &.navbar-shrink {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid fade-out(white, .7);
+      background: black;
+    }
+    .nav-link.active {
+      outline: none;
+      background-color: rgba(white, .3);
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.masthead {
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  background-color: white;
+  @include background-size();
+  #logo {
+    margin: 20px 0px;
+    min-width: 150px;
+    width: 50%;
+  }
+  .intro-body {
+    .intro-text {
+      color: $kinda-blue;
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+  @media(min-width:768px) {
+    height: 100%;
+    padding-top: 50px;
+    .intro-body {
+      .intro-text {
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.btn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: $deep-pink;
+  border: 2px solid $deep-pink;
+  border-radius: 100% !important;
+  background: transparent;
+  &:focus, &:hover {
+    color: white;
+    outline: none;
+    background: $deep-pink;
+  }
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+.btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  background-color: $deep-pink;
+  color: white;
+  font-weight: 700;
+  &:focus, &:hover {
+    @include button($deep-pink, $deep-pink, transparent);
+  }
+}
+
+.btn-default {
+  color: $deep-pink;
+  border: 1px solid $deep-pink;
+  background-color: transparent;
+  &:focus, &:hover {
+    @include button(white, $deep-pink, $deep-pink);
+  }
+}
+
+ul.banner-social-buttons {
+  margin-top: 0;
+  @media(max-width: 1199px) {
+    margin-top: 15px;
+  }
+  @media(max-width:767px) {
+    li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 50px 0;
+  p {
+    color: black;
+    font-size: 12px;
+    margin: 0;
+  }
+  #code-of-conduct {
+    font-size: 10px;
+    a {
+      color: $kinda-blue;
+    }
+  }
+}
+
+::selection, ::-moz-selection {
+  background: #fcfcfc;
+  background: fade-out(white, .8);
+  text-shadow: none;
+}
+
+img::selection, img::-moz-selection {
+  background: transparent;
+}
+
+.content-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+section#about {
+  background-color: $kinda-blue;
+  h2, p {
+    color: white;
+  }
+  a {
+    color: $light-yellow;
+  }
+  h2 > span {
+    @include section-headline($light-green);
+  }
+  img#eighth-light-logo {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+section#meetup {
+  background-color: $light-yellow;
+  h2 > span {
+    @include section-headline($sea-green);
+  }
+  a {
+    color: $deep-pink;
+  }
+  #address {
+    margin: 35px 0 20px 0;
+  }
+  #the-park-dtla {
+    background: url('../img/the-park-dtla.jpg') no-repeat center center;
+    @include background-size();
+    height: 200px;
+    width: auto;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  @media(min-width:992px) {
+    height: 350px;
+  }
+}
+
+section#contact {
+  background-color: $sea-green;
+  h2, p {
+    color: white;
+  }
+  a[href*='mailto'] {
+    color: $kinda-blue;
+  }
+  h2 > span {
+    @include section-headline($kinda-blue);
+   }
+ }
+
+section#mural {
+  background: url('../img/colorful-logo-bg.png') no-repeat bottom center scroll;
+  @include background-size();
+  height: 300px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+section#coc {
+  background-color: $deep-pink;
+  h2,  p {
+    color: white;
+  }
+  h5 {
+    color: $light-yellow;
+  }
+  a {
+    color: $light-yellow;
+  }
+  h2 > span {
+    @include section-headline($light-green);
+    @media(max-width: 448px) {
+      line-height: 70px;
+    }
+  }
+}

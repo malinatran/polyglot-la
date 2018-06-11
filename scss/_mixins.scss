@@ -1,0 +1,18 @@
+//  Mixins
+@mixin section-headline($color) {
+  padding-bottom: 10px;
+  border-bottom: 5px solid $color;
+}
+
+@mixin button($color, $border-color, $background-color) {
+  color: $color;
+  border: 1px solid $border-color;
+  background-color: $background-color;
+}
+
+@mixin background-size() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

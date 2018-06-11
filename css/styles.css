@@ -1,0 +1,378 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: white;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0 0 35px;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#main-nav {
+  font-weight: 700;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black;
+}
+
+#main-nav .navbar-toggler {
+  font-size: 14px;
+  padding: 11px;
+  color: white;
+  border: 1px solid white;
+}
+
+#main-nav .navbar-brand {
+  font-weight: 700;
+}
+
+#main-nav a {
+  color: white;
+}
+
+#main-nav .navbar-nav .nav-item {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#main-nav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#main-nav .navbar-nav .nav-item:active, #main-nav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  #main-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+  }
+  #main-nav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: black;
+  }
+  #main-nav .nav-link.active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #main-nav .nav-link.active:hover {
+    color: white;
+  }
+}
+
+.masthead {
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.masthead #logo {
+  margin: 20px 0px;
+  min-width: 150px;
+  width: 50%;
+}
+
+.masthead .intro-body .intro-text {
+  color: #247BA0;
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 100%;
+    padding-top: 50px;
+  }
+  .masthead .intro-body .intro-text {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.btn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: #FF1654;
+  border: 2px solid #FF1654;
+  border-radius: 100% !important;
+  background: transparent;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+.btn-circle:focus, .btn-circle:hover {
+  color: white;
+  outline: none;
+  background: #FF1654;
+}
+
+.btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  background-color: #FF1654;
+  color: white;
+  font-weight: 700;
+}
+
+.btn:focus, .btn:hover {
+  color: #FF1654;
+  border: 1px solid #FF1654;
+  background-color: transparent;
+}
+
+.btn-default {
+  color: #FF1654;
+  border: 1px solid #FF1654;
+  background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: white;
+  border: 1px solid #FF1654;
+  background-color: #FF1654;
+}
+
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  padding: 50px 0;
+}
+
+footer p {
+  color: black;
+  font-size: 12px;
+  margin: 0;
+}
+
+footer #code-of-conduct {
+  font-size: 10px;
+}
+
+footer #code-of-conduct a {
+  color: #247BA0;
+}
+
+::selection, ::-moz-selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none;
+}
+
+img::selection, img::-moz-selection {
+  background: transparent;
+}
+
+.content-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+section#about {
+  background-color: #247BA0;
+}
+
+section#about h2, section#about p {
+  color: white;
+}
+
+section#about a {
+  color: #F3FFBD;
+}
+
+section#about h2 > span {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #B2DBBF;
+}
+
+section#about img#eighth-light-logo {
+  height: 50px;
+  width: 50px;
+}
+
+section#meetup {
+  background-color: #F3FFBD;
+}
+
+section#meetup h2 > span {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #70C1B3;
+}
+
+section#meetup a {
+  color: #FF1654;
+}
+
+section#meetup #address {
+  margin: 35px 0 20px 0;
+}
+
+section#meetup #the-park-dtla {
+  background: url("../img/the-park-dtla.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+  width: auto;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 992px) {
+  #map {
+    height: 350px;
+  }
+}
+
+section#contact {
+  background-color: #70C1B3;
+}
+
+section#contact h2, section#contact p {
+  color: white;
+}
+
+section#contact a[href*='mailto'] {
+  color: #247BA0;
+}
+
+section#contact h2 > span {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #247BA0;
+}
+
+section#mural {
+  background: url("../img/colorful-logo-bg.png") no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+section#coc {
+  background-color: #FF1654;
+}
+
+section#coc h2, section#coc p {
+  color: white;
+}
+
+section#coc h5 {
+  color: #F3FFBD;
+}
+
+section#coc a {
+  color: #F3FFBD;
+}
+
+section#coc h2 > span {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #B2DBBF;
+}
+
+@media (max-width: 448px) {
+  section#coc h2 > span {
+    line-height: 70px;
+  }
+}

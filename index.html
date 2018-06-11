@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <!-- <head> -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <title>Polyglot.LA</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Custom fonts -->
+    <link href='vendor/font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600, 700' rel='stylesheet'>
+
+    <!-- Custom styles -->
+    <link href='css/styles.min.css' rel='stylesheet'>
+  </head>
+
+  <body id='page-top'>
+
+    <!-- Navigation -->
+    <nav class='navbar navbar-expand-lg navbar-light fixed-top' id='main-nav'>
+      <div class='container'>
+        <a class='navbar-brand js-scroll-trigger' href='#page-top'>Polyglot.LA</a>
+        <button class='navbar-toggler navbar-toggler-right' type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation'>
+          Menu
+          <i class='fa fa-bars'></i>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarResponsive'>
+          <ul class='navbar-nav ml-auto'>
+            <li class='nav-item'>
+              <a class='nav-link js-scroll-trigger' href='#about'>About</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link js-scroll-trigger' href='#meetup'>Meetup</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link js-scroll-trigger' href='#contact'>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class='masthead'>
+      <div class='intro-body'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-8 mx-auto'>
+              <img id='logo' src='img/polyglot-la-logo.jpg'/>
+              <p class='intro-text'>Where code meets community.</p>
+              <p class='call-to-action-text'>Come join us.</p>
+              <a href='#about' class='btn btn-circle js-scroll-trigger'>
+                <i class='fa fa-angle-double-down animated'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id='about' class='content-section text-center'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-lg-8 mx-auto'>
+            <h2><span>About Us</span></h2>
+            <p>We are a community that loves to learn, teach, and share our passion in software development. As polyglots, we explore multiple languages, frameworks, and tech stacks. We host events to spread our knowledge and build our community.</p>
+            <p>Organized by <a href='http://www.8thlight.com' target='_blank'>8th Light</a> Los Angeles.</p>
+            <img id='eighth-light-logo' src='img/8th-light-logo.png'/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id='mural'>
+    </section>
+
+    <!-- Meetup Section -->
+    <section id='meetup' class='meetup-section content-section text-center'>
+      <div class='container'>
+        <div class='col-lg-8 mx-auto'>
+          <h2><span>Our Meetup</span></h2>
+          <p>Hosted the last Tuesday of every month, our meetups include a variety of talks, workshops, and pair programming. Food and beverages are provided. <a href='https://www.meetup.com/PolyglotLA/'>Register here</a> for our next meetup!</p>
+          <div class='d-none d-sm-block'>
+            <a href='https://www.meetup.com/PolyglotLA/' class='btn btn-default btn-lg' target='_blank'>
+              <i class='fa fa-meetup fa-fw'></i>
+              <span class='network-name'>RSVP on Meetup.com</span>
+            </a>
+          </div>
+          <p id='address'>Events are located at 241 S. Figueroa St, Suite 240 | Los Angeles, CA | 90012</p>
+          <div id='the-park-dtla' class='d-none d-sm-block'>
+          </div>
+        </div>
+      </section>
+
+      <div id='map' class='d-none d-sm-block'></div>
+
+      <!-- Contact Section -->
+      <section id='contact' class='content-section text-center'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-8 mx-auto'>
+              <h2><span>Contact Us</span></h2>
+              <p>Interested in speaking, organizing, or sponsoring? Email us at <a href='mailto:organizers@polyglot.la'>organizers@polyglot.la</a>. Connect with us on social media and use the tag #polyglotLA!</p>
+              <ul class='list-inline banner-social-buttons'>
+                <li class='list-inline-item'>
+                  <a href='https://twitter.com/PolyglotLA' class='btn btn-md' target='_blank'>
+                    <i class='fa fa-twitter fa-fw'></i>
+                    <span class='network-name'>Twitter</span>
+                  </a>
+                </li>
+                <li class='list-inline-item'>
+                  <a href='http://slack.com' class='btn btn-md' target='_blank'>
+                    <i class='fa fa-slack fa-fw'></i>
+                    <span class='network-name'>Slack</span>
+                  </a>
+                </li>
+                <li class='list-inline-item'>
+                  <a href='http://youtube.com' class='btn btn-md' target='_blank'>
+                    <i class='fa fa-youtube fa-fw'></i>
+                    <span class='network-name'>YouTube</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class='container text-center'>
+          <p id='code-of-conduct'><a href='./code-of-conduct.html' target='_blank'>Code of Conduct</a></p>
+          <p>Copyright &copy; Polyglot.LA <script>document.write(new Date().getFullYear())</script></p>
+        </div>
+      </footer>
+
+      <script src='vendor/jquery/jquery.min.js'></script>
+      <script src='vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+      <script src='vendor/jquery-easing/jquery.easing.min.js'></script>
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
+      <script src='js/app.min.js'></script>
+    </body>
+  </html>
