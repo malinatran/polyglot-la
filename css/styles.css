@@ -115,10 +115,23 @@ a {
   background-size: cover;
 }
 
+.masthead .logo-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .masthead .logo-section {
+    height: 100vh;
+  }
+}
+
 .masthead #logo {
   margin: 20px 0px;
   min-width: 150px;
-  width: 50%;
+  width: 90%;
 }
 
 .masthead .intro-body .intro-text {

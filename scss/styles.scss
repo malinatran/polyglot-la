@@ -104,11 +104,24 @@ a {
   text-align: center;
   background-color: white;
   @include background-size();
+
+  .logo-section {
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media(min-width:768px) {
+      height: 100vh;
+    }
+  }
+
   #logo {
     margin: 20px 0px;
     min-width: 150px;
-    width: 50%;
+    width: 90%;
   }
+
   .intro-body {
     .intro-text {
       color: $kinda-blue;
