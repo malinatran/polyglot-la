@@ -305,7 +305,7 @@ section#meetup h2 > span {
   border-bottom: 5px solid #70C1B3;
 }
 
-section#meetup a {
+section#meetup p > a {
   color: #FF1654;
 }
 

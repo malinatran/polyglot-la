@@ -272,7 +272,7 @@ section#meetup {
   h2 > span {
     @include section-headline($sea-green);
   }
-  a {
+  p > a {
     color: $deep-pink;
   }
   #address {
