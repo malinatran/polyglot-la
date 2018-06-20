@@ -130,7 +130,7 @@ a {
 
 .masthead #logo {
   margin: 20px 0px;
-  min-width: 150px;
+  max-width: 375px;
   width: 90%;
 }
 

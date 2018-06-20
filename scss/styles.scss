@@ -118,7 +118,7 @@ a {
 
   #logo {
     margin: 20px 0px;
-    min-width: 150px;
+    max-width: 375px;
     width: 90%;
   }
 
@@ -129,6 +129,7 @@ a {
       margin: 0;
     }
   }
+
   @media(min-width:768px) {
     height: 100%;
     padding-top: 50px;
