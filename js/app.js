@@ -74,4 +74,21 @@
 
   // Disables scrolling
   map.scrollZoom.disable();
+
+  $.ajax({
+    dataType: 'jsonp',
+    method: 'get',
+    url: 'https://api.meetup.com/polyglotLA/events?photo-host=public&page=20&sig_id=192436838&sig=9b69280b1e55d1d73c0fbfa2ad3c50489f77748d',
+    success: function(result) {
+      var event = result.data[0];
+      if (event) {
+        var name = event.name;
+        var month = event.local_date.split('-')[1].toString();
+        var day = event.local_date.split('-')[2].toString();
+        var year = event.local_date.split('-')[0].toString();
+        var link = event.link;
+        var customHtml = 'Join us for our next meetup, ' + name + ', on ' + month + '/' + day + '/' + year + '.';
+        $('#next-meetup').text(customHtml);
+        $('#meetup-link').attr('href', link);
+      }}});
 })(jQuery);
