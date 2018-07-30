@@ -308,8 +308,9 @@ section#contact {
   }
   h2 > span {
     @include section-headline($kinda-blue);
-   }
- }
+  }
+}
+
 
 section#mural {
   background: url('../img/colorful-logo-bg.png') no-repeat bottom center scroll;
@@ -336,5 +337,39 @@ section#coc {
     @media(max-width: 448px) {
       line-height: 70px;
     }
+  }
+}
+
+section#speaking {
+  background-color: $kinda-blue;
+  p, ul, ol {
+    color: white;
+    text-align: left;
+  }
+  h2 {
+    color: white;
+  }
+  h5 {
+    margin: 35px 0 10px 0;
+  }
+  h5, a  {
+    color: $light-yellow;
+  }
+  .highlight {
+    color: $light-green;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .no-padding {
+    padding-left: 0;
+  }
+  h2 > span {
+    @include section-headline($light-green);
+    @media(max-width: 448px) {
+      line-height: 70px;
+    }
+  }
+  ul > .no-list-style, ol > .no-list-style {
+    list-style-type: none;
   }
 }

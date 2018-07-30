@@ -393,3 +393,49 @@ section#coc h2 > span {
     line-height: 70px;
   }
 }
+
+section#speaking {
+  background-color: #247BA0;
+}
+
+section#speaking p, section#speaking ul, section#speaking ol {
+  color: white;
+  text-align: left;
+}
+
+section#speaking h2 {
+  color: white;
+}
+
+section#speaking h5 {
+  margin: 35px 0 10px 0;
+}
+
+section#speaking h5, section#speaking a {
+  color: #F3FFBD;
+}
+
+section#speaking .highlight {
+  color: #B2DBBF;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section#speaking .no-padding {
+  padding-left: 0;
+}
+
+section#speaking h2 > span {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #B2DBBF;
+}
+
+@media (max-width: 448px) {
+  section#speaking h2 > span {
+    line-height: 70px;
+  }
+}
+
+section#speaking ul > .no-list-style, section#speaking ol > .no-list-style {
+  list-style-type: none;
+}
