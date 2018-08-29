@@ -313,20 +313,6 @@ section#meetup #address {
   margin: 35px 0 20px 0;
 }
 
-section#meetup #the-park-dtla {
-  background: url("../img/the-park-dtla.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 200px;
-  width: auto;
-}
-
-section#meetup .recording-consent {
-  font-size: 10px;
-}
-
 #map {
   width: 100%;
   height: 300px;
